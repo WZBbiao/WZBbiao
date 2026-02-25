@@ -1,0 +1,38 @@
+name: Generate Snake
+
+on:
+  # 每天午夜自动运行
+  schedule:
+    - cron: "0 0 * * *" 
+  
+  # 允许手动触发
+  workflow_dispatch:
+  
+  # 每次 push 到 main 分支时触发（方便测试）
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate Snake
+        uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            resources/grid-snake.svg
+            resources/grid-snake-dark.svg?palette=github-dark
+
+      - name: Push to GitHub
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: generate snake animation"
+          file_pattern: resources/*.svg
+          branch: main
+          create_branch: true
