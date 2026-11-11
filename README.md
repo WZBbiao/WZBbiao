@@ -21,20 +21,23 @@
 - 🌱 Merged PRs upstream into [App-Store-Connect-CLI](https://github.com/rorkai/App-Store-Connect-CLI), [Kingfisher](https://github.com/onevcat/Kingfisher), [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift), [OpenClaw](https://github.com/openclaw/openclaw)
 - 📍 China
 
-### 🧩 Open Source · Cindy
+### 🌱 Open Source
 
-[Cindy](https://github.com/makecindy/cindy) is an open-source AI agent for desktop. I work on the app itself — Electron + React + TypeScript — and have landed **15 merged PRs across 50 commits and 119 files** since 2026-09:
+I mostly hack on open-source AI agents and Apple-side tooling. Repositories I've landed changes in, mostly as **Cindy** desktop-app work (Electron + React + TypeScript, 15 merged PRs since 2026-09):
 
-| Shipped | What it does |
-|---------|--------------|
-| 🔕 [Per-task mute](https://github.com/makecindy/cindy/pull/6244) | Mute one task: no toast, no sound, no phone push, no IM — while the task keeps running |
-| ⬅️➡️ [Task back / forward](https://github.com/makecindy/cindy/pull/6628) | Browser-style navigation through visited tasks, `⌘[` / `⌘]`, rebindable |
-| 🔍 [Find in preview](https://github.com/makecindy/cindy/pull/8236) | `⌘F` inside a preview: match count, highlight, next / previous, layered `Esc` |
-| 🔴 [Dock badge](https://github.com/makecindy/cindy/pull/7647) | Unread that could never be cleared no longer pins the badge ([#4465](https://github.com/makecindy/cindy/pull/4465)) |
-| 📋 [Queued messages](https://github.com/makecindy/cindy/pull/8977) | Hover a truncated message in the send queue to read it in full |
-| ⌨️ Key ownership | Shortcut and focus ownership across previews, fullscreen video, menus and IME |
-| 🖥️ [Mac auto-unlock](https://github.com/makecindy/cindy/pull/9647) | Stabilise the AX unlock flow; report missing credentials instead of "wrong password" |
-| 🩹 [Main-branch rescue](https://github.com/makecindy/cindy/pull/9366) | Restore relay-head evidence a test-only PR of mine had dropped, turning `main` green |
+| Repository | What I touched |
+|------------|----------------|
+| [makecindy/cindy](https://github.com/makecindy/cindy) | Desktop app — notifications, task navigation, find in preview, Dock badge |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Shell wrapper allowlist evaluation |
+| [lidge-jun/opencodex](https://github.com/lidge-jun/opencodex) | Codex project config warnings |
+| [rorkai/App-Store-Connect-CLI](https://github.com/rorkai/App-Store-Connect-CLI) | Price points by customer price, tier pricing |
+| [rorkai/app-store-connect-cli-skills](https://github.com/rorkai/app-store-connect-cli-skills) | `asc-crash-triage` skill |
+| [onevcat/Kingfisher](https://github.com/onevcat/Kingfisher) | `purgeFramesOnBackground` for `KFAnimatedImage` |
+| [SwifterSwift/SwifterSwift](https://github.com/SwifterSwift/SwifterSwift) | `backgroundViewColor` on `UIStackView` |
+| [swift-composable-architecture](https://github.com/pointfreeco/swift-composable-architecture) | Docs — navigation state types |
+| [chenbimo/yidash](https://github.com/chenbimo/yidash) | `yd_array_flatten` utility |
+| [lvwzhen/tools](https://github.com/lvwzhen/tools) | Listed FreeToolBox in the tools collection |
+| [Vybers-AI/vybers-ios](https://github.com/Vybers-AI/vybers-ios) | Live Activity signing and app metadata |
 
 ### 🛠️ Tech Stack
 
@@ -75,8 +78,8 @@
 <!--- snake -->
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WZBbiao/WZBbiao/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WZBbiao/WZBbiao/output/github-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="resources/grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="resources/grid-snake.svg" />
     <img alt="github-snake" src="resources/grid-snake.svg" />
   </picture>
 </div>
