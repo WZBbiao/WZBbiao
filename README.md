@@ -37,7 +37,6 @@ I mostly hack on open-source AI agents and Apple-side tooling. Repositories I've
 | [swift-composable-architecture](https://github.com/pointfreeco/swift-composable-architecture) | Docs — navigation state types |
 | [chenbimo/yidash](https://github.com/chenbimo/yidash) | `yd_array_flatten` utility |
 | [lvwzhen/tools](https://github.com/lvwzhen/tools) | Listed FreeToolBox in the tools collection |
-| [Vybers-AI/vybers-ios](https://github.com/Vybers-AI/vybers-ios) | Live Activity signing and app metadata |
 
 ### 🛠️ Tech Stack
 
