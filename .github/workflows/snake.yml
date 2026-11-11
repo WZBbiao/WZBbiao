@@ -9,13 +9,18 @@ on:
   workflow_dispatch:
   
   # 每次 push 到 main 分支时触发（方便测试）
+  # 忽略 snake 自己提交的 push，避免自触发成环
   push:
     branches:
     - main
+    paths-ignore:
+    - resources/**
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -36,3 +41,5 @@ jobs:
           file_pattern: resources/*.svg
           branch: main
           create_branch: true
+          # 用 bot 身份提交，避免 snake 的日常提交算进个人贡献图
+          commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
